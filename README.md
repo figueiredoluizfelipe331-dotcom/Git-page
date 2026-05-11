@@ -7,13 +7,13 @@ Criação site Luiz
 
 ## Projetos Pessoais
 - Site Portfólio
-- Página Web HTML/CSS
+
 
 ## Tecnologias
 - Python
-- HTML
-- CSS
-- Git
+-
+
+
 - GitHub
 
 ## Autor
