@@ -69,3 +69,116 @@
 
         .grid-links {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .card-link {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--text-main);
+            border: 1px solid #334155;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-link:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+            background: #24334d;
+        }
+
+        .card-link bold {
+            color: var(--accent);
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .card-link span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            margin-top: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Luiz Felipe</h1>
+            <p>Estudante de Análise e Desenvolvimento de Sistemas (ADS)</p>
+        </header>
+
+        <section class="about">
+            <h2>Sobre Mim</h2>
+            <p>Desenvolvedor em formação pelo CEUB, focado em construir soluções eficientes e expandir conhecimentos em engenharia de software e versionamento. Atualmente participando do Bootcamp de ADS para consolidar habilidades práticas de mercado.</p>
+        </section>
+
+        <section class="links-section">
+            <h2>🚀 Meus Projetos & Conexões</h2>
+            <div class="grid-links">
+                <a href="https://docs.google.com/document/d/1dCGU2aF-3H-jUVXweaHzQtHq9_j49saEZhI7QhorTes/edit?usp=sharing" target="_blank" class="card-link">
+                    <bold>📄 Currículo Profissional</bold>
+                    <span>Histórico acadêmico e objetivos de carreira.</span>
+                </a>
+                
+                <a href="https://docs.google.com/presentation/d/1zY-mBY1RLNIrVyk6FKyk0Q5DR_i3M7YO047H33Hx2yw/edit?usp=sharing" target="_blank" class="card-link">
+                    <bold>📊 Slides do Portfólio</bold>
+                    <span>Apresentação visual dos meus projetos desenvolvidos.</span>
+                </a>
+
+                <a href="https://sites.google.com/view/luiz-felipe-ceub/in%C3%ADcio" target="_blank" class="card-link">
+                    <bold>🌐 Google Sites</bold>
+                    <span>Minha central de conteúdos acadêmicos no CEUB.</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/luiz-felipe-costa-figueiredo-109547380/?skipRedirect=true" target="_blank" class="card-link">
+                    <bold>🔗 LinkedIn</bold>
+                    <span>Conecte-se comigo profissionalmente.</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2>🎥 Vídeo de Apresentação do Projeto</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 10px;">Assista à explicação detalhada do desenvolvimento deste repositório e dos conceitos de versionamento aplicados:</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/YQWZ2_MUb0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido para o Desafio de Versionamento • 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
